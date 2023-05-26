@@ -1,5 +1,6 @@
-const UserCartDetails = () => {
-    return <p> This is a UserCartDetails Page</p>;
+const UserCartDetailsPage = () => {
+  return <p>This is a user cart details page</p>;
 };
 
-export default UserCartDetails;
+export default UserCartDetailsPage;
+
