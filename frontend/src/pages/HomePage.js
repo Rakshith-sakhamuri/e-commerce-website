@@ -1,6 +1,7 @@
 import ProductCourselComponent from "../components/ProductCourselComponent";
 import CategoryCardComponent from "../components/user/CategoryCardComponent";
 import { Row,Container } from "react-bootstrap";
+import UserChatComponent from "../components/user/UserChatComponent";
 
 const HomePage = () => {
     const categories = [
@@ -8,6 +9,7 @@ const HomePage = () => {
     ];
     return (
         <>
+            <UserChatComponent/>
             <ProductCourselComponent />
             <Container>
                 <Row xs={1} md={2} className="g-4 mt-5">
