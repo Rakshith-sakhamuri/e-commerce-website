@@ -1,13 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // publicly available pages:
-// import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 // import ProductDetailsPage from "./pages/ProductDetailsPage";
 // import ProductListPage from "./pages/ProductListPage";
 // import CartPage from "./pages/CartPage";
 // import LoginPage from "./pages/LoginPage";
 // import RegisterPage from "./pages/RegisterPage";
 
+
+//importing components
 import ProtectedRoutesComponent from "./components/ProtectedRoutesComponent";
+import FooterComponent from "./components/FooterComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import UserChatComponent from "./components/user/UserChatComponent.js";
 
 // protected user pages:
 import UserProfilePage from "./pages/user/UserProfilePage";
@@ -25,14 +30,18 @@ import AdminOrdersPage from "./pages/admin/Orders";
 import AdminOrderDetailsPage from "./pages/admin/OrderDetails";
 import AdminChatsPage from "./pages/admin/Chats";
 import AdminAnalyticsPage from "./pages/admin/Analytics";
+import RoutesWithUserChatComponent from "./components/user/RoutesWithUserChatComponent"
 
 function App() {
   return (
+    <>
+    <HeaderComponent />
     <BrowserRouter>
       <Routes>
+      
         {/* publicly available routes: */}
-        {/* <Route path="/" element={<HomePage />} />
-        <Route path="/product-list" element={<ProductListPage />} />
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/product-list" element={<ProductListPage />} />
         <Route path="/product-details" element={<ProductDetailsPage />} />
         <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
@@ -55,6 +64,8 @@ function App() {
 
         {/* admin protected routes: */}
         <Route element={<ProtectedRoutesComponent admin={true} />}>
+          <Route element={<RoutesWithUserChatComponent/>}>
+
           <Route path="/admin/users" element={<AdminUsersPage />} />
           <Route path="/admin/edit-user" element={<AdminEditUserPage />} />
           <Route path="/admin/products" element={<AdminProductsPage />} />
@@ -73,9 +84,12 @@ function App() {
           />
           <Route path="/admin/chats" element={<AdminChatsPage />} />
           <Route path="/admin/analytics" element={<AdminAnalyticsPage />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
+    <FooterComponent/>
+    </>
   );
 }
 
