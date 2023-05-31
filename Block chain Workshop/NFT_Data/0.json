@@ -1,0 +1,19 @@
+{
+    "name":"Supra",
+    "description": "Supra NFT Mint for the Workshop",
+    "image": "https://ipfs.io/ipfs/QmXnQKru9NtLcDmNt6tRBzedeGDfAR7sWHGwcaQ1Yp6vg5/0.jpeg",
+    "attributes": [
+        {
+            "trail_type": "NFT Type",
+            "value": "Membership"
+        },
+        {
+            "trail_type": "Access",
+            "value": "All Fleet"
+        },
+        {
+            "trail_type": "Background",
+            "value": "Black"
+        }
+    ]
+}

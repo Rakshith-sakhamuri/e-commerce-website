@@ -1,0 +1,132 @@
+.column {
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 1px;
+    padding: 5px;
+}
+
+.painting::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.a {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
+    flex-basis: 70%;
+    order: 2;
+}
+
+.text {
+    font-style: serif;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+#navItem1 {
+    padding-left: 60px;
+}
+
+#navItem2 {
+    padding-left: 60px;
+}
+
+#navItem3 {
+    padding-left: 60px;
+}
+
+#navItem4 {
+    padding-left: 60px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.field {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.btn {
+    margin-left: 260px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.pc-view {
+    padding-left: 140px;
+}
+
+.bg-section {
+    padding: 40px;
+}
+
+.services-btn {
+    padding: 10px;
+    font-family: serif;
+}
+
+.navbar-css {
+    height: 100px;
+}
+
+.carousel-css {
+    margin-top: 100px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.wallpaper-img {
+    width: 530px;
+    height: 300px;
+    margin-left: 70px;
+}
+
+.wallpaper-card-text,
+.wallpaper-card-title {
+    margin-left: 55px;
+}
+
+.wallpapers,
+.services,
+.painting {
+    margin-top: 30px;
+}
+
+.pa-section,
+.wbu-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wbusection {
+    margin-top: 30px;
+}
+
+.pa-section-description {
+    font-family: sans-serif;
+}

@@ -1,0 +1,58 @@
+[
+   {
+      "Brand" : "Skoda",
+      "Model" : "Octavia VRS 245",
+      "Reg_no" : "AP 16 DK 4546",
+	  "top_speed" : "250kmph",
+	  "Milleage" : "12kmpl"
+   },
+   {
+      "Brand" : "Volkswagen",
+      "Model" : "Polo GT TSI",
+      "Reg_no" : "AP 39 DP 7777",
+	  "top_speed" : "200kmph",
+	  "Milleage" : "20kmpl"
+   },
+   {
+      "Brand" : "Mahindra",
+      "Model" : "Thar 4x4",
+      "Reg_no" : "AP 39 PU 3435",
+	  "top_speed" : "190kmph",
+	  "Milleage" : "15kmpl"
+   },
+   {
+      "Brand" : "BMW",
+      "Model" : "340i",
+      "Reg_no" : "TS 28 HY 2865",
+	  "top_speed" : "280kmph",
+	  "Milleage" : "10kmpl"
+   },
+   {
+      "Brand" : "Mercedes-Benz",
+      "Model" : "G Wagon",
+      "Reg_no" : "TS 13 HU 8055",
+	  "top_speed" : "280kmph",
+	  "Milleage" : "8kmpl"
+   },
+   {
+      "Brand" : "Land Rover",
+      "Model" : "Defender",
+      "Reg_no" : "AP 14 HY 5473",
+	  "top_speed" : "250kmph",
+	  "Milleage" : "9kmpl"
+   },
+   {
+      "Brand" : "Porshe",
+      "Model" : "Panamera",
+      "Reg_no" : "TN 34 GT 4567",
+	  "top_speed" : "290KMPH",
+	  "Milleage" : "8kmpl"
+   },
+   {
+      "Brand" : "Toyota",
+      "Model" : "Land Cruiser",
+      "Reg_no" : "AP 23 JN 4509",
+	  "top_speed" : "250kmph",
+	  "Milleage" : "7kmpl"
+   }
+]

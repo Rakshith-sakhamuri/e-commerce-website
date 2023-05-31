@@ -1,0 +1,64 @@
+<!-- <html>
+  <head>
+    <script>
+      var myText;
+
+      myText = "This is new text to be added to the page dynamically.";
+
+      function addText(location) {
+        var newNode;
+
+        var newText;
+
+        var docElement;
+
+        newNode = document.createElement("p");
+
+        newText = document.createTextNode(myText);
+
+        newNode.appendChild(newText);
+
+        docElement = document.getElementById(location);
+
+        docElement.appendChild(newNode);
+      }
+    </script>
+    <script language="javascript" type="text/javascript">
+      theseElements = new Array();
+
+      theseElements = document.getElementsByTagName("*");
+
+      for (i = 0; i < theseItems.length; i++) {
+        alert(typeof theseItems[i]);
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>
+      <a href="#" onclick="addText('thisLocation');">
+        Click to add new text to the page
+      </a>
+    </p>
+
+    <p id="thisLocation">New text will appear below here</p>
+
+    <p>Some further text in the page</p>
+  </body>
+</html> -->
+<html>
+  <head>
+    <title>onClick Event Handler Example</title>
+
+    <script language="“JavaScript”">
+
+      function warnUser() { return confirm("INE2720 students?”); }
+    </script>
+  </head>
+
+  <body>
+    <a href="reference.html”, onClick=" warnUser()”
+      >INE2720 Students access only</a
+    >
+  </body>
+</html>

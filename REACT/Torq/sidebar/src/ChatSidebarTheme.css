@@ -1,0 +1,13 @@
+/* ChatSidebarTheme.css */
+
+:root {
+    --sidebar-background: #f2f2f2;
+    --sidebar-text: #333;
+  }
+  
+  /* Dark mode theme */
+  .dark-theme {
+    --sidebar-background: #333;
+    --sidebar-text: #fff;
+  }
+  

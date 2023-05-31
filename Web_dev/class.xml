@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?> 
+<!DOCTYPE class SYSTEM “class.dtd”?>
+<class>
+   <student rollno = "201131">
+      <firstname>Rakshith</firstname>
+      <lastname>S</lastname>
+      <nickname>S R</nickname>
+      <marks>70</marks>
+   </student>
+   
+   <student rollno = "201111">
+      <firstname>Hayagreev</firstname>
+      <lastname>Hari</lastname>
+      <nickname>haya</nickname>
+      <marks>85</marks>
+   </student>
+   
+   <student rollno = "201136">
+      <firstname>Vijay</firstname>
+      <lastname>Reddy</lastname>
+      <nickname>Pratap</nickname>
+      <marks>78</marks>
+   </student>
+</class>

@@ -1,0 +1,32 @@
+<?xml version = "1.0"?>
+<class>
+   <car rg_no = "0007">
+      <Brand>BMW</Brand>
+      <Model>3 series</Model>
+      <varient>40i</varient>
+      <f_economy>9</f_economy>
+   </car>
+   
+   <car rg_no = "6529">
+      <Brand>Skoda</Brand>
+      <Model>Octavia</Model>
+      <varient>VRS</varient>
+      <f_economy>12</f_economy>
+   </car>
+	
+   
+   <car rg_no = "9999">
+      <Brand>Volkswagen</Brand>
+      <Model>Polo</Model>
+      <varient>GT</varient>
+      <f_economy>22</f_economy>
+   </car>
+
+   <car rg_no = "8055">
+      <Brand>Mahindra</Brand>
+      <Model>Thar</Model>
+      <varient>4*4 HT</varient>
+      <f_economy>13</f_economy>
+   </car>
+   
+</class>

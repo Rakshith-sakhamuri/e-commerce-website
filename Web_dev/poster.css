@@ -1,0 +1,28 @@
+body {
+    background-image: url("l89620221204163808.jpeg")
+}
+
+h1 {
+    border-style: dashed;
+    background-color:red;
+    text-align:center; 
+    font-size:100px
+}
+
+.original-css {
+    width: 30%;
+    
+    color: red;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.marquee-css {
+    font-size: 25px;
+    color: red;
+    background-color: black;
+    padding: 10px;
+}
