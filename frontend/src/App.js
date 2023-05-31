@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // publicly available pages:
 import HomePage from "./pages/HomePage";
 // import ProductDetailsPage from "./pages/ProductDetailsPage";
-// import ProductListPage from "./pages/ProductListPage";
+import ProductList from "./pages/ProductList";
 // import CartPage from "./pages/CartPage";
 // import LoginPage from "./pages/LoginPage";
 // import RegisterPage from "./pages/RegisterPage";
@@ -41,8 +41,8 @@ function App() {
       
         {/* publicly available routes: */}
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/product-list" element={<ProductListPage />} />
-        <Route path="/product-details" element={<ProductDetailsPage />} />
+        <Route path="/product-list" element={<ProductList />} />
+        {/* <Route path="/product-details" element={<ProductDetailsPage />} />
         <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
