@@ -3,7 +3,6 @@ import { Pagination } from "react-bootstrap";
 const PaginationComponent = () => {
   return (
     <Pagination>
-      <Pagination.First />
       <Pagination.Prev />
       <Pagination.Item>{1}</Pagination.Item>
       <Pagination.Ellipsis />
@@ -17,7 +16,6 @@ const PaginationComponent = () => {
       <Pagination.Ellipsis />
       <Pagination.Item>{20}</Pagination.Item>
       <Pagination.Next />
-      <Pagination.Last />
     </Pagination>
   );
 };

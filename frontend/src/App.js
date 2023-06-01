@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // publicly available pages:
 import HomePage from "./pages/HomePage";
-// import ProductDetailsPage from "./pages/ProductDetailsPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductList from "./pages/ProductList";
 // import CartPage from "./pages/CartPage";
 // import LoginPage from "./pages/LoginPage";
@@ -13,6 +13,7 @@ import ProtectedRoutesComponent from "./components/ProtectedRoutesComponent";
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
 import UserChatComponent from "./components/user/UserChatComponent.js";
+import ScrollToTop from "./pages/utils/ScrollTop";
 
 // protected user pages:
 import UserProfilePage from "./pages/user/UserProfilePage";
@@ -37,13 +38,14 @@ function App() {
     <>
     <HeaderComponent />
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
       
         {/* publicly available routes: */}
         <Route path="/" element={<HomePage />} />
         <Route path="/product-list" element={<ProductList />} />
-        {/* <Route path="/product-details" element={<ProductDetailsPage />} />
-        <Route path="/product-details/:id" element={<ProductDetailsPage />} />
+        <Route path="/product-details" element={<ProductDetailsPage />} />
+        {/* <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
