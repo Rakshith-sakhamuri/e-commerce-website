@@ -2,7 +2,7 @@ import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner'
-const RegisterPage = () => {
+const LoginPage = () => {
   const [validated, setValidated] = useState(false);
 
   const onChange = () => {
@@ -31,28 +31,8 @@ const RegisterPage = () => {
           <h1>Register</h1>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="validationCustom01">
-              <Form.Label>Your name</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Enter your name"
-                name="name"
-              />
-              <Form.Control.Feedback type="invalid">
-                Please enter a name
-              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicLastName">
-              <Form.Label>Your last name</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Enter your last name"
-                name="lastName"
-              />
-              <Form.Control.Feedback type="invalid">
-                Please enter your last name
-              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -79,33 +59,16 @@ const RegisterPage = () => {
               <Form.Control.Feedback type="invalid">
                 Please anter a valid password
               </Form.Control.Feedback>
-              <Form.Text className="text-muted">
-                Password should have at least 6 characters
-              </Form.Text>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPasswordRepeat">
-              <Form.Label>Repeat Password</Form.Label>
-              <Form.Control
-                name="confirmPassword"
-                required
-                type="password"
-                placeholder="Repeat Password"
-                minLength={6}
-                onChange={onChange}
-              />
-              <Form.Control.Feedback type="invalid">
-                Both passwords should match
-              </Form.Control.Feedback>
             </Form.Group>
 
             <Row className="pb-2">
               <Col>
-                Do you have an account already?
-                <Link to={"/login"}> Login </Link>
+                Don't you have an account?
+                <Link to={"/register"}> Login </Link>
               </Col>
             </Row>
 
-            <Button type="submit">
+            <Button variant="promary" type="submit">
               <Spinner
                 as="span"
                 animation="border"
@@ -116,10 +79,7 @@ const RegisterPage = () => {
               Submit
             </Button>
             <Alert show={true} variant="danger">
-                User with that email already exists!
-            </Alert>
-            <Alert show={true} variant="info">
-                User created
+                Wrong credentials
             </Alert>
           </Form>
         </Col>
@@ -128,4 +88,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default LoginPage;

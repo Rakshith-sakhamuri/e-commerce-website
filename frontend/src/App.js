@@ -4,8 +4,7 @@ import HomePage from "./pages/HomePage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductList from "./pages/ProductList";
 // import CartPage from "./pages/CartPage";
-// import LoginPage from "./pages/LoginPage";
-// import RegisterPage from "./pages/RegisterPage";
+import RegisterPage from "./RegisterPage";
 
 
 //importing components
@@ -20,6 +19,7 @@ import UserProfilePage from "./pages/user/UserProfilePage";
 import UserOrdersPage from "./pages/user/UserOrdersPage";
 import UserCartDetailsPage from "./pages/user/UserCartDetailsPage";
 import UserOrderDetailsPage from "./pages/user/UserOrderDetailsPage";
+import CartPage from "./pages/CartPage";
 
 // protected admin pages:
 import AdminUsersPage from "./pages/admin/Users";
@@ -44,12 +44,12 @@ function App() {
         {/* publicly available routes: */}
         <Route path="/" element={<HomePage />} />
         <Route path="/product-list" element={<ProductList />} />
-        <Route path="/product-details" element={<ProductDetailsPage />} />
+        {/* <Route path="/product-details" element={<ProductDetailsPage />} /> */}
         {/* <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/login" element={<LoginPage />} /> */}
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="*" element="Page not exists 404" /> */}
+        {/* <Route path="*" element="Page not exists 404" /> */}
 
         {/* <Route path="/" component={HomePage} />  in previous versions of react-router-dom */}
 
@@ -86,6 +86,7 @@ function App() {
           />
           <Route path="/admin/chats" element={<AdminChatsPage />} />
           <Route path="/admin/analytics" element={<AdminAnalyticsPage />} />
+          <Route path="/cart" element={<CartPage />}/>
           </Route>
         </Route>
       </Routes>
